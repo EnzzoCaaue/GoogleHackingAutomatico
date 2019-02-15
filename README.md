@@ -1,4 +1,4 @@
-# GoogleHackingAutomatico
+# Google Hacking Automatico
 Script para automatizar o uso do Google Hacking.
 
 Script criado por Ryan Aragão 
