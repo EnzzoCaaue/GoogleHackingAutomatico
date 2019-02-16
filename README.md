@@ -11,14 +11,18 @@ Esse script foi feito para economizar tempo e energia, básicamente ele vai faze
 
 Requisitos:
 Python 3.7 
+
 Pacote Google
 
 # Instalação Script e Utilização:
-git clone https://github.com/RyanAragao2/GoogleHackingAutomatico/
+1. git clone https://github.com/RyanAragao2/GoogleHackingAutomatico/
 
-python Google Hacking Automatico.py or python 3.7 Google Hacking Automatico.py 
+2. python Google Hacking Automatico.py 
+
+2.1 python 3.7 Google Hacking Automatico.py (Caso tenha outras versões do Python instalada)
 
 # Instalação pacote google:
 
-python
-pip install google
+1. python
+
+2. pip install google
