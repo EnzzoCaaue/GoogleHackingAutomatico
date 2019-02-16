@@ -15,6 +15,7 @@ google
 
 Instalação Script e Utilização:
 git clone https://github.com/RyanAragao2/GoogleHackingAutomatico/
+
 python Google Hacking Automatico.py or python 3.7 Google Hacking Automatico.py 
 
 Instalação pacote google:
