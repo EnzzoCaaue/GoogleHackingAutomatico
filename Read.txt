@@ -1,8 +1,0 @@
-Script criado por Ryan Aragão 
-14/02/2019
-Python 3.7
-
-Esse script foi feito para economizar tempo e energia, básicamente ele vai fazer de forma automatica uma busca no Google para encontrar URLS que possivelmente tenha o que o usuario precisa.
-
-Caso tenha outras versões do python instalada, digite python 3.7 no CMD pra executar ele da melhor forma possível. Os resultados serão salvos no txt "resultado".
-
