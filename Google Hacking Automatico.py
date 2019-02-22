@@ -1,38 +1,40 @@
 #########################################
 #       Criado por Ryan Aragão          #
 #            14/02/2019                 #
-#   Script para auxiliar no PenTest     #
-#               V1.0                    #
+#  Script para Realizar Google Hacking  #
+#               V2.0                    #
 #########################################
 from googlesearch import search
 
-# Apresentação
-print("Seja bem-vindo ao Google Hacking Automatico!")
-print("O Script buscara por URLS onde tiver o que foi pedido")
-print("Após encontrar ele vai guardar os resultados em um TXT")
-print("Feito para economizar tempo e energia!")
-print("Criado por Ryan Aragão")
-input("Pressione ENTER para continuar")
-
-dominio = str(input("coloque o dominio:"))
+dominio = str(input("coloque o dominio: "))
 
 # Ataque
 email = f'intitle:parceria | intitle:contato | intext:@gmail.com | intext:@contato | intext:@hotmail site:{dominio}'
 acesslog = f'inurl:access.log {dominio}'
 indexof = f'inurl:“index of” {dominio}'
 robotstxt = f'inurl:robots.txt {dominio}'
+senha = f'filetype:xls senha | filetype:txt intext:senha site:{dominio}'
 
 
 def menu():
+    banner = '''
+    +-------------------------+-------------------------+
+    |             Seja bem vindo a GHPP                 |
+    |   Realize o Google Hacking de Forma Automática!   |
+    | Criada para economizar tempo e energia no PenTest |
+    |           https://github.com/RyanAragao2          |
+    +-------------------------+-------------------------+
+            '''
+    print(banner)
     print("0 - Sair")
     print("1 - Procurar Emails")
     print("2 - Tentar encontrar Log de Acesso")
     print("3 - Tentar encontrar Index OF")
     print("4 - Tentar encontrar ROBOTS")
+    print("5 - Tentar roubar senha")
 
-
+menu()
 while True:
-    menu()
     menuzinho = int(input("Selecione uma opção: "))
     if menuzinho == 0:
         print("Até a proxima")
@@ -61,5 +63,13 @@ while True:
                 print(url, file=stream)
                 print("Os URLS foram salvos em resultadorobots.txt")
                 print("Caso queira, selecione outra opção")
+    elif menuzinho == 5:
+        with open("resultadosenhas.txt", "w") as stream:
+            for url in search(senha, stop=20):
+                print(url, file=stream)
+                print("Os URLS foram salvos em resultadosenhas.txt")
+                print("Caso queria, selecione outra opção")
+            else:
+                print("Não foi encontrado nada")
     else:
         print("Essa opção não existe, tente novamente!")
