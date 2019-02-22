@@ -69,7 +69,5 @@ while True:
                 print(url, file=stream)
                 print("Os URLS foram salvos em resultadosenhas.txt")
                 print("Caso queria, selecione outra opção")
-            else:
-                print("Não foi encontrado nada")
     else:
         print("Essa opção não existe, tente novamente!")
